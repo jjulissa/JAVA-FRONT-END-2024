@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Nunito.ttf');
+
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Nunito', sans-serif; 
+} 
+
+body { 
+    background-color: #181419;
+    color: #ffffff;
+} 
+
+::-webkit-scrollbar {
+    width: 8px; 
+    
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9f3647;
+    /* border-radius: 6px; */
+
+}
+
+.headerHome { 
+    color: #ffffff; 
+    min-height: 9vh; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 0 12% 0 4%; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #9f3647; 
+    z-index: 1000;
+} 
+
+@keyframes dance {
+
+    0%, 100% { 
+        transform: skewY(0); 
+    }
+    50% { 
+        transform: skewY(-5deg); 
+    }
+}
+
+.logoHeader:hover { 
+    animation: dance .3s infinite;
+} 
+
+.logoHeader a, 
+.headerRegistro a { 
+    color: #ffffff; 
+    font-size: 1.1vw;
+    text-decoration: none;
+}
+
+.logoHeader img, 
+.headerRegistro img { 
+    filter: invert(100%);
+} 
+
+.linkHeader { 
+    display: flex; 
+    /* align-items: center; */
+} 
+
+.linkHeader a { 
+    cursor: pointer;
+    color: #ffffff; 
+    text-decoration: none;
+    margin-right: 5%; 
+    text-wrap: nowrap; 
+    font-size: 1.1vw; 
+    font-weight: 400; 
+    padding: 1.4% 5%;
+} 
+
+.linkHeader a:hover, 
+.linkHeader a:nth-child(3):hover { 
+    background-color: #9f3647;  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.linkHeader a:nth-child(3) { 
+    height: 65%;
+    background-color: #000000; 
+    padding: 1.4% 8%; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center;
+} 
+
+.home {
+    margin-top: 5%;
+    background-color: #181419;
+    color: #ffffff;
+}
+
+.disfrutaCancela { 
+    padding-top: 10%;
+    background-image: linear-gradient(#0000008a, #0000008a), url("../IMG/banner-bg.jpeg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 95vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    color: #ffffff; 
+    /* opacity: 0.2;  */
+    
+} 
+ 
+.disfrutaCancela h1 {  
+    position: relative;
+    z-index: 999; 
+    font-size: 3.1vw; 
+    font-weight: 700;
+    width: 50%; 
+    text-align: center;
+    color: #ffffff; 
+    margin-bottom: 2%;
+}
+
+.disfrutaCancela h2 { 
+    font-size: 2vw; 
+    z-index: 999;
+}
+
+.disfrutaCancela a { 
+    z-index: 999;
+    color: #ffffff; 
+    font-size: 1.5vw; 
+    margin-top: 2%; 
+    text-decoration: none; 
+    background-color: #9f3647; 
+    padding: 1% 1.5%; 
+    border-radius: 10px;
+}  
+
+
+.disfrutaCancela a:hover, 
+.disfrutaCancela a:active { 
+    transform: scale(0.95); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.buscando { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 7%;
+} 
+
+.buscando h2 { 
+    font-size: 3vw; 
+    font-weight: 900; 
+    margin-bottom: 3%;
+} 
+
+.buscando form { 
+    width: 80%; 
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.buscando form input[type="search"] { 
+    width: 40%;
+    padding: 1%; 
+    margin-right: 2%;
+    border: none;
+    border-radius: 35px;
+    font-size: 20px;
+}
+
+.buscando form input[type="submit"] { 
+    width: 10%; 
+    border-radius: 45px; 
+    background-color: #9f3647; 
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    font-size: 20px; 
+    padding: 1%;
+
+} 
+
+.buscando form input[type="submit"]:hover,
+.buscando form input[type="submit"]:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.hr { 
+    width: 80%; 
+    height: 3px; 
+    margin: 10% auto 1% auto;
+    background-color: #9f3647;
+} 
+
+#divMovies h2, .aclamadas h2 { 
+    font-size: 3vw;
+    text-align: center;
+    
+}  
+
+.tendenciaHoy { 
+    padding-top: 2%;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 3%; 
+    margin: auto; 
+    width: 80%; 
+    justify-content: center; 
+    align-items: center;
+
+} 
+
+.tendenciaHoy div { 
+    position: relative;
+    margin-bottom: 3%; 
+    
+} 
+
+.tendenciaHoy img { 
+    border-radius: 10px;
+} 
+
+.tendenciaHoy div h3 { 
+    max-width: 200px;
+    opacity: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+} 
+
+.tendenciaHoy div:hover h3 {
+    opacity: 1;
+}
+
+.tendenciaHoy img:hover { 
+    filter: blur(15px);
+} 
+
+.btnNext { 
+    display: flex; 
+    justify-content: center; 
+    gap: 2%;
+} 
+
+.btnNext button { 
+    /* width: 10%;  */ 
+    padding: 1% ; 
+    border-radius: 10px; 
+    background-color: #9f3647; 
+    color: #ffffff; 
+    font-size: 15px;
+    border: 2px #ffffff solid;
+} 
+
+.btnNext button:hover,
+.btnNext button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.aclamadas div { 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    width: 80%; 
+    margin: 5% auto;
+
+}
+
+.aclamadas div::-webkit-scrollbar {
+    height: 20px;
+    margin: 5% auto;
+}
+
+.aclamadas div img { 
+    margin: 0 5% 5% 0; 
+    border-radius: 10px;
+}
+
+
+
+footer { 
+    margin-top: 7%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #9f3647; 
+    color: #ffffff; 
+    min-height: 12vh;
+} 
+
+footer div { 
+    display: flex;
+} 
+
+footer div a { 
+    text-wrap: nowrap;
+    color: #ffffff; 
+    text-decoration: none; 
+    margin-right: 2%; 
+    font-size: 20px;
+} 
+
+footer div a:last-child { 
+    background-color: #000000; 
+    padding: 1% 2%; 
+    border-radius: 10px;
+} 
+
+footer a img { 
+    position: absolute; 
+    right: 5vw;
+} 
+
+/* ------------ Registro ----------- */  
+
+.bodyRegistro { 
+    background-image: url("../IMG/bg-register.jpeg");  
+} 
+
+.headerRegistro { 
+    margin: 1.5% 0 3% 3%;
+}
+
+.registro { 
+    width: 40%; 
+    /* min-height: 80%; */
+    margin: auto;
+    background-color: rgb(42, 42, 42); 
+    padding: 4%; 
+    margin-bottom: 1%;
+    
+} 
+
+.registro h2, 
+.login h2 { 
+    /* color: #ffffff; */
+    margin-bottom: 5%; 
+    font-size: 2.2vw;
+    /* text-align: center; */
+} 
+
+.registro form input, 
+select, 
+.login form input { 
+    margin-bottom: 3%; 
+    padding: 1.5%; 
+    background-color: #333333; 
+    border: #9f3647 3px solid; 
+    border-radius: 15px; 
+    color: #ffffff;
+
+}
+
+.registro form input, 
+.registro form select { 
+    width: 100%; 
+    
+} 
+
+.terminosCondiciones { 
+    margin: 4% 0;
+    display: flex; 
+    gap: 2%;
+} 
+
+.terminosCondiciones input[type="checkbox"] { 
+    width: auto;
+}
+
+.registro input[type="submit"], 
+.login input[type="submit"] { 
+    color: #ffffff;
+    background-color: #9f3647;  
+    padding: 3%; 
+    border-radius: 5px; 
+    width: 95%; 
+    font-size: 1vw;
+} 
+
+.registro a { 
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 3%;
+    /* text-align: center; */
+} 
+
+input::placeholder, 
+input[type="date"], 
+select {
+    font-size: 20px;
+} 
+
+/*----------------- Iniciar Sesión ------------------*/ 
+
+.login { 
+    display: flex; 
+    flex-direction: column; 
+    width: 30%; 
+    background-color: #2a2a2a; 
+    padding: 15% 5%; 
+    margin: auto;
+}
+
+.login form { 
+    display: flex; 
+    flex-direction: column; 
+    
+} 
+
+.login a { 
+    color: #787878; 
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+/*----------------------Detalle--------------*/ 
+
+.superMario { 
+    background-image: linear-gradient(#6d6969a7, #6d6969a7), url("../IMG/mario-bg.jpeg"); 
+    min-height: 80vh; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex; 
+    margin-top: 4%; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 5%;
+    
+}  
+
+.superMarioLeft img { 
+    border-radius: 15px; 
+
+} 
+
+.superMarioRight { 
+    width: 50%;
+} 
+
+.superMarioRight h2 { 
+    padding-top: 2%;
+}
+
+.director { 
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 2%;
+} 
+
+.trailer { 
+    background-color: #181419; 
+    width: 80%; 
+    display: flex; 
+    justify-content: center; 
+    /* align-items: center;  */
+    gap: 15%; 
+    padding-top: 7%; 
+    margin: auto;
+}  
+
+.trailerRight { 
+    margin-top: 6%;
+} 
+
+.trailerRightImg { 
+    margin-bottom: 5%;
+    filter: invert(1); 
+    display: flex; 
+    justify-content: space-between;
+} 
+
+.trailerRightTable caption { 
+    margin-bottom: 5%;
+}
+
+.trailerRightTable table { 
+    text-align: left;
+
+} 
+

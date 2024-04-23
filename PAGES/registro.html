@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../CSS/styles.css"> 
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+    <div> 
+        <link rel="icon" type="image/x-icon" href="../IMG/iconoMovies.ico">
+        <title>Registro | CAC-MOVIES</title>
+    </div> 
+
+</head>
+<body class="bodyRegistro"> 
+
+    <header class="headerRegistro"> 
+        <a href="../index.html"><img width="15px" src="../IMG/carrete-de-pelicula.png" alt=""> CAC-Movies</a>
+    </header> 
+
+    <main class="registro"> 
+
+        <h2>Registro</h2> 
+
+        <form action="" method="get"> 
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required> 
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido">  
+            <input type="email" name="email" id="email" placeholder="Email" required> 
+            <input type="password" name="password" id="password" placeholder="Contrasena" required> 
+            <input type="date" name="fecha" id="fecha"> 
+
+            <label for="opciones"></label> 
+            <select id="opciones" name="opciones" required>  
+                <option value="">Pais</option>
+                <option value="opcion1">Argentina </option>
+                <option value="opcion2">Bolivia </option>
+                <option value="opcion3">Brasil </option>
+                <option value="opcion3">Chile </option> 
+                <option value="opcion1">Colombia </option>
+                <option value="opcion2">Ecuador </option>
+                <option value="opcion3">Paraguay </option>
+                <option value="opcion3">Peru </option> 
+                <option value="opcion3">Uruguay </option>
+                <option value="opcion3">Venezuela </option>
+            </select>
+        
+            <div class="terminosCondiciones"> 
+                <input type="checkbox" name="acepto" id="acepto" required> 
+                <span>Acepto términos y condiciones</span>
+            </div> 
+
+            <input type="submit" value="Registrarse">
+            
+        </form>
+        <a href="#">Necesitas ayuda?</a>
+    </main>
+    
+</body>
+</html>
