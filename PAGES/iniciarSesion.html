@@ -20,14 +20,19 @@
     <main class="login"> 
         <h2>Iniciar Sesión</h2> 
 
-        <form action="" method="post"> 
+        <form id="loginForm" action="" method="post" > 
             <input type="email" name="email" id="email" placeholder="Email"> 
+            <small id="emailError" class="error-message"></small>
             <input type="password" name="password" id="password" placeholder="Contrasena"> 
+            <small id="passwordError" class="error-message"></small>
             <input type="submit" value="Iniciar Sesión"> 
         </form> 
 
         <a href="./registro.html">Registrarse</a>
     </main>
 
+
+
+    <script src="../JS/main.js"></script>
 </body>
 </html>

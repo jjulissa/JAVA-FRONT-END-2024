@@ -9,6 +9,7 @@
         <link rel="icon" type="image/x-icon" href="./IMG/iconoMovies.ico">
         <title>CAC-MOVIES</title>
     </div> 
+    <script src="./JS/main.js"></script>
 </head>
 <body> 
 
@@ -39,9 +40,9 @@
             <div class="buscando"> 
                 <h2>¿Qué estas buscando para ver?</h2> 
 
-                <form action="" method="get"> 
+                <form id="formBuscarMovie" action="" method="get"> 
                     <input type="search" name="buscar" id="buscar" placeholder="Buscar"> 
-                    <input type="submit" value="Buscar">
+                    <input type="submit" value="Buscar" id="btnBuscarMovie">
                 </form>
             </div> 
 
@@ -49,8 +50,11 @@
 
             <div id="divMovies"> 
                 <h2>Las tendencias de hoy</h2> 
-                <div class="tendenciaHoy"> 
-                    <div> 
+               
+                <div id="tendenciaHoy"></div> 
+
+        <!--    <div class="tendenciaHoy"> 
+                    <div class="tendenciaMovies"> 
                         <a href="./PAGES/detalle.html">
                             <img width="250px" src="./IMG/imgPelicula/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpeg" alt="Peliculas">
                         </a> 
@@ -472,10 +476,7 @@
                     </div>  
 
 
-                    
-
-
-                </div>
+                </div>  -->
             </div> 
 
             <div class="btnNext"> 
@@ -526,5 +527,9 @@
         <a href="#disfrutaCancela"><img src="./IMG/flecha-hacia-arriba.png" alt="Flecha-hacia-arriba"></a>
     </footer>
     
+
+
+
+    <script src="./JS/main.js"></script>
 </body>
 </html>
